@@ -1,0 +1,24 @@
+npm init --y
+npm i -D typescript
+npx tsc --init
+//tsconfig.json
+#uncomment:
+ "rootDir": "./src",
+    "outDir": "./dist",
+
+
+# "module": "esnext", in tsconfig.json
+"types": ["node"],
+
+comment
+"jsx": "react-jsx",
+
+# package,json:
+ "type": "module"
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+npm i -D tsx

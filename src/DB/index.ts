@@ -33,7 +33,10 @@ export const initDB = async () => {
                 created_at TIMESTAMP DEFAULT NOW(),
                 updated_at TIMESTAMP DEFAULT NOW())
                 `);
-    } catch (error) {
-
+                console.log('Database created successfully!');
+    } catch (error: any) {
+        console.error('Error creating tables:');
+        console.error(error.message);
+        console.error(error);
     }
 };

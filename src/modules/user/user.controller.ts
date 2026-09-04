@@ -1,0 +1,11 @@
+import type { Request, Response } from "express";
+
+const createUser = async (req:Request, res:Response)=>{
+
+    try{
+        const result = await user
+
+    } catch(error){
+
+    }
+};
